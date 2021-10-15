@@ -4,82 +4,123 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./desing.css">
+    
+    <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Figuras</title>
 </head>
 <body>
-    <p><b>Calcula el area y perimetro de un cuadrado</b></p>
-    <form>
-        <label for="inputCuadrado">
-            Escribe cuanto mide cada lado de tu cuadrado
-        </label>
+    <nav class="navPrincipal">
+        <ul>
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="">Porcentajes</a></li>
+            <li><a href="">Promedios</a></li>
+            <li><a href="">Salarios</a></li>
+        </ul>
+    </nav>
 
-        <input id="inputCuadrado" type="number">
+    <header>
+        <h1>MathApp</h1>
+        <p>Figuras Geometricas
+            <span class="ec ec-notebook"></span>
+        </p>
+    </header>
 
-        <button type="button" onclick="calcularPerimetroCuadrado()">
-            calcula el perimetro
-        </button>
+    <section>
+        <article class="calCuadrado">
+            <p><b>Area y perimetro de un cuadrado</b></p>
+            <form>
+                <label for="inputCuadrado">
+                    Escribe cuanto mide cada lado de tu cuadrado
+                </label>
         
-        <button type="button" onclick="calcularAreaCuadrado()">
-            Calcula el area
-        </button>
-    </form>
+                <input id="inputCuadrado" type="number">
+        
+                <button type="button" onclick="calcularPerimetroCuadrado()">
+                    calcula el perimetro
+                </button>
+                
+                <button type="button" onclick="calcularAreaCuadrado()">
+                    Calcula el area
+                </button>
+            </form>
+        </article>
+
+    
+        <article class="calTriangulo">
+            <p><b>Calcula el area y perimetro de un Triangulo</b></p>
+            <form>
+                <label for="ladoUno">Escribe cuando mide el primer lado</label>
+                <input id="ladoUno" type="number">
+        
+                <label for="ladoDos">Escribe cuando mide el segundo lado</label>
+                <input id="ladoDos" type="number">
+        
+                <label for="base">Escribe cuando mide la base</label>
+                <input id="base" type="number">
+        
+                <label for="altura">Escribe cual es su altura</label>
+                <input id="altura" type="number">
+        
+        
+                <button type="button" onclick="calcularAreaTriangulo()">
+                    Calcula el area
+                </button>
+        
+                <button type="button" onclick="calcularPerimetroTriangulo()">
+                    Calcula el perimetro
+                </button>
+            </form>      
+        </article>
 
 
-    <p><b>Calcula el area y perimetro de un Triangulo</b></p>
-    <form>
-        <label for="ladoUno">Escribe cuando mide el primer lado</label>
-        <input id="ladoUno" type="number">
+        <article class="calCirculo">
+            <p><b>Calcula el area y perimetro de un Circulo</b></p>
+            <form>
+                <label for="radio">Introducel eñ radio del circulo</label>
+                <input type="number" id="radio">
+        
+                <button type="button" onclick="calcularAreaCirculo()">
+                Calcula el area del circulo
+                </button>
+        
+                <button type="button" onclick="calcularPerimetroCirculo()">
+                Calcula el perimetro de un circulo
+                </button>
+        
+            </form>
+        
+        </article>
 
-        <label for="ladoDos">Escribe cuando mide el segundo lado</label>
-        <input id="ladoDos" type="number">
 
-        <label for="base">Escribe cuando mide la base</label>
-        <input id="base" type="number">
+        <article class="calTrianguloIsoceles">
+            <p><b>Calcula la altura de un Triangulo Isoceles</b></p>
+    
+            <p>Recuerda que un Triangulo Isoceles se caracterisa por que 
+            el lado <b>a</b> y el lado <b>b</b> miden lo mismo y la <b>hipotenusa</b>
+            es el lado mas corto
+            </p>
+        
+            <label for="ladoSemejante">Ingresa uno de los lados del Triangulo</label>
+            <input type="number"  id="ladoSemejante">
+            <label for="hipotenusa">Ingresa la hipotenusa</label>
+            <input type="number"  id="hipotenusa">
+        
+            <button type="button" onclick="calcularAlturaTIsoceles()">
+                Calcula la altura
+            </button>
+        </article>
 
-        <label for="altura">Escribe cual es su altura</label>
-        <input id="altura" type="number">
+    </section>
 
-
-        <button type="button" onclick="calcularAreaTriangulo()">
-            Calcula el area
-        </button>
-
-        <button type="button" onclick="calcularPerimetroTriangulo()">
-            Calcula el perimetro
-        </button>
-    </form>
-
-    <p><b>Calcula el area y perimetro de un Circulo</b></p>
-    <form>
-        <label for="radio">Introducel eñ radio del circulo</label>
-        <input type="number" id="radio">
-
-        <button type="button" onclick="calcularAreaCirculo()">
-        Calcula el area del circulo
-        </button>
-
-        <button type="button" onclick="calcularPerimetroCirculo()">
-        Calcula el perimetro de un circulo
-        </button>
-
-    </form>
-
-    <p><b>Calcula la altura de un Triangulo Isoceles</b></p>
-
-    <p>Recuerda que un Triangulo Isoceles se caracterisa por que 
-    el lado <b>a</b> y el lado <b>b</b> miden lo mismo y la <b>hipotenusa</b>
-    es el lado mas corto
-    </p>
-
-    <label for="ladoSemejante">Ingresa uno de los lados del Triangulo</label>
-    <input type="number"  id="ladoSemejante">
-    <label for="hipotenusa">Ingresa la hipotenusa</label>
-    <input type="number"  id="hipotenusa">
-
-    <button type="button" onclick="calcularAlturaTIsoceles()">
-        Calcula la altura
-    </button>
-
+    <footer>
+        <picture>
+            <img src="/General/sello.jpg" alt="LogoPerfil" class="logo">
+        </picture>
+    </footer>
 
     <script src="form.js"></script>
 </body>
