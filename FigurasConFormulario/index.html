@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><b>Calcula el area y perimetro de un cuadrado</b></p>
+    <form>
+        <label for="inputCuadrado">
+            Escribe cuanto mide cada lado de tu cuadrado
+        </label>
+
+        <input id="inputCuadrado" type="number">
+
+        <button type="button" onclick="calcularPerimetroCuadrado()">
+            calcula el perimetro
+        </button>
+        
+        <button type="button" onclick="calcularAreaCuadrado()">
+            Calcula el area
+        </button>
+    </form>
+
+
+    <p><b>Calcula el area y perimetro de un Triangulo</b></p>
+    <form>
+        <label for="ladoUno">Escribe cuando mide el primer lado</label>
+        <input id="ladoUno" type="number">
+
+        <label for="ladoDos">Escribe cuando mide el segundo lado</label>
+        <input id="ladoDos" type="number">
+
+        <label for="base">Escribe cuando mide la base</label>
+        <input id="base" type="number">
+
+        <label for="altura">Escribe cual es su altura</label>
+        <input id="altura" type="number">
+
+
+        <button type="button" onclick="calcularAreaTriangulo()">
+            Calcula el area
+        </button>
+
+        <button type="button" onclick="calcularPerimetroTriangulo()">
+            Calcula el perimetro
+        </button>
+    </form>
+
+    <p><b>Calcula el area y perimetro de un Circulo</b></p>
+    <form>
+        <label for="radio">Introducel eñ radio del circulo</label>
+        <input type="number" id="radio">
+
+        <button type="button" onclick="calcularAreaCirculo()">
+        Calcula el area del circulo
+        </button>
+
+        <button type="button" onclick="calcularPerimetroCirculo()">
+        Calcula el perimetro de un circulo
+        </button>
+
+    </form>
+
+    <p><b>Calcula la altura de un Triangulo Isoceles</b></p>
+
+    <p>Recuerda que un Triangulo Isoceles se caracterisa por que 
+    el lado <b>a</b> y el lado <b>b</b> miden lo mismo y la <b>hipotenusa</b>
+    es el lado mas corto
+    </p>
+
+    <label for="ladoSemejante">Ingresa uno de los lados del Triangulo</label>
+    <input type="number"  id="ladoSemejante">
+    <label for="hipotenusa">Ingresa la hipotenusa</label>
+    <input type="number"  id="hipotenusa">
+
+    <button type="button" onclick="calcularAlturaTIsoceles()">
+        Calcula la altura
+    </button>
+
+
+    <script src="form.js"></script>
+</body>
+</html>
