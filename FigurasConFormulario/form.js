@@ -16,7 +16,9 @@ function calcularPerimetroCuadrado(){
     const input = document.getElementById("inputCuadrado");
     const value = input.value;
     const perimetro = perimetroCuadrado(value);
-    alert(perimetro);
+
+    const resultadoCuadrado = document.getElementById("resultadoCuadrado")
+    resultadoCuadrado.innerText = `El perimetro es:  ${perimetro}`;
 }
 
 // MOSTRAR EN PANTALLA AREA CUADRADO
@@ -25,18 +27,17 @@ function calcularAreaCuadrado(){
     const input = document.getElementById("inputCuadrado");
     const value = input.value;
     const area = areaCuadrado(value);
-    alert(area);
+    
+    const resultadoCuadrado = document.getElementById("resultadoCuadrado")
+    resultadoCuadrado.innerText = `El area es:  ${area}`;
 }
 
-///////////////////////////////
-
-// FUNCION AREA TRIANGULO
-
+/*------------------------------------------------------
+        TRIANGULO
+-------------------------------------------------------*/
 function areaTriangulo(base,altura){
     return (base*altura/2);
 }
-
-// FUNCION PERIMETRO TRIANGULO
 
 function perimetroTriangulo(ladoUno,ladoDos,base){
     return (Number(ladoUno)+Number(ladoDos)+Number(base));
@@ -56,7 +57,10 @@ function calcularAreaTriangulo(){
     const value__altura = input__altura.value;
 
     const area = areaTriangulo(value__base,value__altura);
-    alert(area);
+    
+    const resultadoTriangulo = document.getElementById("resultadoTriangulo")
+    resultadoTriangulo.innerText = `El area es:  ${area}`;
+
 }
 
 
@@ -72,22 +76,19 @@ function calcularPerimetroTriangulo(){
     const value__altura = input__altura.value;
 
     const perimetro = perimetroTriangulo(value__ladoUno,value__ladoDos,value__base);
-    alert(perimetro);
+    
+    const resultadoTriangulo = document.getElementById("resultadoTriangulo")
+    resultadoTriangulo.innerText = `El perimetro es:  ${perimetro}`;
 }
 
 
-
-
-
-
-////////////////////////////////
-
-// FUNCION AREA DE UN CIRCULO
+/*------------------------------------------------------
+        CIRCULO
+-------------------------------------------------------*/
 function areaCirculo(radio){
     return (radio*radio*Math.PI);
 }
 
-// FUNCION PERIMETRO DE UN CIRCULO 
 function perimetroCirculo(radio){
     return (2*Math.PI*radio);
 }
@@ -98,7 +99,9 @@ function calcularAreaCirculo(){
     const value__radio = input__radio.value;
 
     const area = areaCirculo(value__radio);
-    alert(area);
+    
+    const resultadoCirculo = document.getElementById("resultadoCirculo")
+    resultadoCirculo.innerText = `El area es:  ${area}`;
 }
 
 function calcularPerimetroCirculo(){
@@ -106,7 +109,9 @@ function calcularPerimetroCirculo(){
     const value__radio = input__radio.value;
 
     const perimetro = perimetroCirculo(value__radio);
-    alert(perimetro);
+    
+    const resultadoCirculo = document.getElementById("resultadoCirculo")
+    resultadoCirculo.innerText = `El perimetro es:  ${perimetro}`;
 }
 
 
@@ -130,5 +135,7 @@ function calcularPerimetroCirculo(){
         const value__hipotenusa = input__hipotenusa.value;
     
         const altura = alturaTrianguloIsoceles(value__ladoSemejante,value__hipotenusa);
-        alert(altura);
+        
+        const rresultadoTrianguloIsoceles = document.getElementById("resultadoTrianguloIsoceles")
+        resultadoTrianguloIsoceles.innerText = `La altura es:  ${altura}`;
     }
