@@ -31,48 +31,58 @@
 
     <section>
         <article class="calCuadrado">
-            <p><b>Area y perimetro de un cuadrado</b></p>
-            <form>
-                <label for="inputCuadrado">
-                    Escribe cuanto mide cada lado de tu cuadrado
+            <p class="titleFigure"><b>Area y perimetro de un cuadrado</b></p>
+            <div class="dibujoCuadrado"></div>
+            <form class="formularioCuadrado">
+                <label for="inputCuadrado" class="instructionFigure">
+                    Escribe cuanto mide un lado.
                 </label>
         
-                <input id="inputCuadrado" type="number">
+                <input id="inputCuadrado" type="number" class="inputFigura">
         
-                <button type="button" onclick="calcularPerimetroCuadrado()">
-                    calcula el perimetro
+
+                <div class="divCuadrado">
+                <button type="button" onclick="calcularPerimetroCuadrado()" class="botonFiguras">
+                    Obten perimetro
                 </button>
                 
-                <button type="button" onclick="calcularAreaCuadrado()">
-                    Calcula el area
+                <button type="button" onclick="calcularAreaCuadrado()" class="botonFiguras">
+                    Obten area
                 </button>
+                </div>
             </form>
         </article>
 
     
         <article class="calTriangulo">
-            <p><b>Calcula el area y perimetro de un Triangulo</b></p>
-            <form>
-                <label for="ladoUno">Escribe cuando mide el primer lado</label>
-                <input id="ladoUno" type="number">
+            <p class="titleFigure"><b>Calcula el area y perimetro de un Triangulo</b></p>
+            <picture>
+                <img src="/FigurasConFormulario/triangulo.png" alt="Triangulo">
+            </picture>
+            <form class="fomularioTriangulo">
+                <label for="ladoUno" class="instructionFigure">Escribe cuando mide el primer lado</label>
+                <input id="ladoUno" type="number" class="inputFigura">
         
-                <label for="ladoDos">Escribe cuando mide el segundo lado</label>
-                <input id="ladoDos" type="number">
+                <label for="ladoDos" class="instructionFigure">Escribe cuando mide el segundo lado</label>
+                <input id="ladoDos" type="number" class="inputFigura">
         
-                <label for="base">Escribe cuando mide la base</label>
-                <input id="base" type="number">
+                <label for="base" class="instructionFigure">Escribe cuando mide la base</label>
+                <input id="base" type="number" class="inputFigura">
         
-                <label for="altura">Escribe cual es su altura</label>
-                <input id="altura" type="number">
+                <label for="altura" class="instructionFigure">Escribe cual es su altura</label>
+                <input id="altura" type="number" class="inputFigura">
         
-        
-                <button type="button" onclick="calcularAreaTriangulo()">
-                    Calcula el area
-                </button>
-        
-                <button type="button" onclick="calcularPerimetroTriangulo()">
-                    Calcula el perimetro
-                </button>
+                <div class="divCuadrado">
+                    <button type="button" onclick="calcularAreaTriangulo()"  class="botonFiguras">
+                        Calcula el area
+                    </button>
+            
+                    <button type="button" onclick="calcularPerimetroTriangulo()"  class="botonFiguras">
+                        Calcula el perimetro
+                    </button>
+                </div>
+ 
+                
             </form>      
         </article>
 
@@ -94,7 +104,7 @@
             </form>
         
         </article>
-
+ 
 
         <article class="calTrianguloIsoceles">
             <p><b>Calcula la altura de un Triangulo Isoceles</b></p>

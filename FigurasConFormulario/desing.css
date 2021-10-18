@@ -71,16 +71,82 @@ header p{
 /*------------------------------------------------------
 SECTION
 -------------------------------------------------------*/
+/*COMPONENTES GENERALES / REUTILIZABLES*/
+.inputFigura{
+    width:50%;
+    height:3rem;
+    border:none;
+    margin:1rem 0rem;
+    font-size:2.5rem;
+    text-align:center;
+}
+
+.botonFiguras{
+    font-size:1.8rem;
+    padding:.5rem;
+    border:none;
+    width:auto;
+}
+
+.titleFigure{
+    text-align:right;
+    font-size:2rem;
+}
+
+.instructionFigure{
+    font-size:1.7rem;
+}
+
+
+/*CUADRADO*/
+
 .calCuadrado{
     background:red;
-    height:10rem;
+    height:auto;
+    padding:1rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
 }
 
+
+.dibujoCuadrado{
+    width:10rem;
+    height:10rem;
+    background:dodgerblue;
+    align-self:center;
+    margin:1rem 0rem;
+}
+
+.formularioCuadrado{
+    margin-left:1rem;
+}
+
+.divCuadrado{
+    width:100%;
+    height:auto;
+}
+
+/*------------------------------------------------------
+        TRIANGULO
+-------------------------------------------------------*/
 .calTriangulo{
     background:green;
-    height:10rem;
+    height:auto;
+    padding:1rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
 }
 
+.fomularioTriangulo{
+    display:flex;
+    flex-direction:column;
+}
+
+/*------------------------------------------------------
+        TRIANGULO
+-------------------------------------------------------*/
 .calCirculo{
     background:purple;
     height:10rem;
