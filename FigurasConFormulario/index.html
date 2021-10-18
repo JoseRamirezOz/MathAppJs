@@ -15,7 +15,7 @@
 <body>
     <nav class="navPrincipal">
         <ul>
-            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="../index.html">Inicio</a></li>
             <li><a href="">Porcentajes</a></li>
             <li><a href="">Promedios</a></li>
             <li><a href="">Salarios</a></li>
@@ -56,8 +56,8 @@
     
         <article class="calTriangulo">
             <p class="titleFigure"><b>Calcula el area y perimetro de un Triangulo</b></p>
-            <picture>
-                <img src="/FigurasConFormulario/triangulo.png" alt="Triangulo">
+            <picture class="dibujoTriangulo">
+                <img src="triangulo.png" alt="Triangulo">
             </picture>
             <form class="fomularioTriangulo">
                 <label for="ladoUno" class="instructionFigure">Escribe cuando mide el primer lado</label>
@@ -88,47 +88,62 @@
 
 
         <article class="calCirculo">
-            <p><b>Calcula el area y perimetro de un Circulo</b></p>
-            <form>
-                <label for="radio">Introducel eñ radio del circulo</label>
-                <input type="number" id="radio">
+            <p class="titleFigure"><b>Calcula el area y perimetro de un Circulo</b></p>
+            <form class="formCirculo">
+
+                <div class="dibujoCirculo"></div>
+
+                <label for="radio" class="instructionFigure">Introduce el radio del circulo</label>
+                <input type="number" id="radio" class="inputFigura">
         
-                <button type="button" onclick="calcularAreaCirculo()">
-                Calcula el area del circulo
-                </button>
-        
-                <button type="button" onclick="calcularPerimetroCirculo()">
-                Calcula el perimetro de un circulo
-                </button>
-        
+                <div class="botonesCirculo">
+                    <button type="button" onclick="calcularAreaCirculo()" class="botonFiguras">
+                        Calcula area
+                        </button>
+                
+                        <button type="button" onclick="calcularPerimetroCirculo()" class="botonFiguras" >
+                        Calcula perimetro
+                        </button>
+                </div>
+   
             </form>
         
         </article>
  
 
         <article class="calTrianguloIsoceles">
-            <p><b>Calcula la altura de un Triangulo Isoceles</b></p>
+            <p class="titleFigure"><b>Calcula la altura de un Triangulo Isoceles</b></p>
     
-            <p>Recuerda que un Triangulo Isoceles se caracterisa por que 
-            el lado <b>a</b> y el lado <b>b</b> miden lo mismo y la <b>hipotenusa</b>
-            es el lado mas corto
-            </p>
-        
-            <label for="ladoSemejante">Ingresa uno de los lados del Triangulo</label>
-            <input type="number"  id="ladoSemejante">
-            <label for="hipotenusa">Ingresa la hipotenusa</label>
-            <input type="number"  id="hipotenusa">
-        
-            <button type="button" onclick="calcularAlturaTIsoceles()">
-                Calcula la altura
-            </button>
+            <form class="formTrianguloI">
+                <p class="instructionFigure">Recuerda que un Triangulo Isoceles se caracterisa por que 
+                el lado <b>a</b> y el lado <b>b</b> miden lo mismo y la <b>hipotenusa</b>
+                es el lado mas corto
+                </p>
+                
+                <picture  class="dibTriangI">
+                    <img src="" alt="">
+                </picture>
+
+                    <label for="ladoSemejante" class="instructionFigure">Ingresa uno de los lados del Triangulo</label>
+                    <input type="number"  id="ladoSemejante" class="inputFigura">
+                    <label for="hipotenusa" class="instructionFigure">Ingresa la hipotenusa</label>
+                    <input type="number"  id="hipotenusa" class="inputFigura">
+                
+                    <div class="botonesTrianguloI">
+                        <button type="button" onclick="calcularAlturaTIsoceles()" class="botonFiguras">
+                            Calcula la altura
+                        </button>
+                    </div>
+
+            </form>
+
         </article>
 
     </section>
 
     <footer>
         <picture>
-            <img src="/General/sello.jpg" alt="LogoPerfil" class="logo">
+            <img src="../General/sello.jpg" alt="LogoPerfil" class="logo">
         </picture>
     </footer>
 

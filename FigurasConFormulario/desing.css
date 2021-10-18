@@ -83,9 +83,10 @@ SECTION
 
 .botonFiguras{
     font-size:1.8rem;
-    padding:.5rem;
+    padding:1rem;
     border:none;
     width:auto;
+    background:#f5f5f5;
 }
 
 .titleFigure{
@@ -101,21 +102,21 @@ SECTION
 /*CUADRADO*/
 
 .calCuadrado{
-    background:red;
+    background:var(--main-color);
     height:auto;
-    padding:1rem;
+    padding:2rem;
     display:flex;
     flex-direction:column;
     justify-content:center;
+    margin-bottom:2rem;
 }
 
 
 .dibujoCuadrado{
-    width:10rem;
-    height:10rem;
+    width:15rem;
+    height:15rem;
     background:dodgerblue;
     align-self:center;
-    margin:1rem 0rem;
 }
 
 .formularioCuadrado{
@@ -131,12 +132,13 @@ SECTION
         TRIANGULO
 -------------------------------------------------------*/
 .calTriangulo{
-    background:green;
+    background:var(--main-color);
     height:auto;
     padding:1rem;
     display:flex;
     flex-direction:column;
     justify-content:center;
+    margin-bottom:2rem;
 }
 
 .fomularioTriangulo{
@@ -144,19 +146,62 @@ SECTION
     flex-direction:column;
 }
 
+.dibujoTriangulo{
+    align-self:center;
+}
+
 /*------------------------------------------------------
-        TRIANGULO
+        CIRCULO
 -------------------------------------------------------*/
 .calCirculo{
-    background:purple;
-    height:10rem;
+    background:var(--main-color);
+    height:auto;
+    padding:1rem; 
+    margin-bottom:2rem;  
 }
 
+.formCirculo{
+    display:flex;
+    flex-direction:column;
+}
+
+.dibujoCirculo{
+    width:15rem;
+    height:15rem;
+    border-radius:50%;
+    background:darkred;
+    align-self:center;
+    margin:2rem 0rem;
+}
+
+.botonesCirculo{
+    width:100%;
+    height:auto;
+}
+
+/*------------------------------------------------------
+    TRIANGULO ISOCELES
+-------------------------------------------------------*/
 .calTrianguloIsoceles{
-    background:black;
-    height:10rem;
+    background:var(--main-color);
+    height:auto;
+    padding:1rem;
+    margin-bottom:2rem;
 }
 
+.formTrianguloI{
+    display:flex;
+    flex-direction:column;
+}
+
+.botonesTrianguloI{
+    width:100%;
+}
+
+.dibTriangI{
+    align-self:center;
+    margin:2rem 0rem;
+}
 
 
 
