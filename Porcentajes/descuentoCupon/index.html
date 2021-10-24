@@ -4,41 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Descuento</title>
+    <title>MathApp</title>
     <link rel="stylesheet" href="desing.css">
+    
+    <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="cabecera">
-        <img src="../../sello.jpg" alt="Sello" class="sello">
+    <nav class="navPrincipal">
+        <ul>
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="../../Figuras/index.html">Figuras</a></li>
+            <li><a href="../../Promedios/promedioMediaModa.html">Promedios</a></li>
+            <!-- <li><a href="">Salarios</a></li> -->
+        </ul>
+    </nav>
 
-        <h1>Felicidades, hiciste una compra excelnte</h1>
+    <header>
+        <h1>MathWeb</h1>
+        <p>Mini programagas para solucionar
+           problemas matematicos
+           <span class="ec ec-wink"></span>
+        </p>
+    </header>
 
+<section class="main"> 
+    <article class="main-Cabecera">
+        <h1>Simulador de compra</h1>
         <picture>
             <img src="producto.jpg" alt="Producto comprado" class="product">
         </picture>
+    
+        <h2>Te tenemos buenas noticias existen multiples
+            descuentos</h2>
+    
+        <h3>Si tienes un cupon ingresalo ahora!</h3>
+    </article>
 
-            <h2>Te tenemos buenas noticias existen multiples
-                descuentos
-            </h2>
+    <form class="main-Formulario">
+        <label for="InputPrice" class="main-Formulario--Instruccion">Ingresa el monto de la compra</label>
+        <input type="number" id="InputPrice" placeholder="$" class="main-Formulario--Input">
+        <label for="InputPrice" class="main-Formulario--Instruccion">Ingresa tu cupon</label>
+        <input type="text" id="InputDiscount" placeholder="Ejemplo: cup0n" class="main-Formulario--Input">
+        <button type = "button" onclick="onClickButtonPriceDiscount()" class="main-Formulario--Boton">Ver precio final</button>
+        <p id="ResultP"></p>   
+    </form>
 
-            <h3>Si tienes un cupon ingresalo ahora!</h3>
-         
-    </header>
-
-
-    <section>
-        <form class="formDescuento">
-            <label for="InputPrice">Ingresa el monto de la compra</label>
-            <input type="number" id="InputPrice" placeholder="$">
-
-            <input type="text" id="InputDiscount" placeholder="Ejemplo: cup0n">
-            <button type = "button" onclick="onClickButtonPriceDiscount()">Ver precio final</button>
-        </form>
+    <article class="main-Pie">
         <p>Cupones de prueba!</p>
-        <p>v3r4n0 | bu3nF1n | n4v1d4d</p>
-        <p id="ResultP" class="precioFinalCupon"></p>
+        <p>v3r4n0 | bu3nF1n | n4v1d4d</p>   
+    </article>
     </section>
 
+    <footer>
+        <picture>
+            <img src="../../General/sello.jpg" alt="LogoPerfil" class="logo">
+        </picture>
+    </footer>
     <script src="cupon.js"></script>
 </body>
 </html>
+
+
+

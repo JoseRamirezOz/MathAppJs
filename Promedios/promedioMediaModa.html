@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="desing.css">
+    
+    <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Promedio MMM</title>
+</head>
+<body>
+    <nav class="navPrincipal">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../Figuras/index.html">Figuras</a></li>
+            <li><a href="../Promedios/promedioMediaModa.html">Promedios</a></li>
+            <!-- <li><a href="">Salarios</a></li> -->
+        </ul>
+    </nav>
+
+    <header>
+        <h1>MathWeb</h1>
+        <p>Promedio(Media, Mediana, Moda)
+            <span class="ec ec-notebook"></span>
+        </p>
+    </header>
+
+    <section>
+    <form class="formularioProm">
+        <article class="componentForm">
+            <p class="tituloProgram">Media Aritmetica</p>
+           
+            <label for="InputArray" class="instrucciones">Ingresa los numeros
+                Ejemplo: 3,4,5,6,8
+            </label>
+            
+            <div class="proceso">
+                <input type="text" class="inputDatos" id="InputArray">
+                <button type="button" class="boton" onclick="ButtonMedia()">Calcular</button>
+            </div>
+            <p id="rMedia"></p>
+        </article>
+
+
+
+        <article class="componentForm">
+            <p class="tituloProgram">Mediana</p>
+            <label for="Input-Data--Mediana" class="instrucciones">Ingresa los numeros
+                Ejemplo: 3,4,5,6,8
+            </label>
+            
+            <div class="proceso">
+                <input type="text" id="Input-Data--Mediana" class="inputDatos">
+                <button type="button" onclick="ButtonMediana()" class="boton">Calcular</button>
+            </div>
+            <p id="outputMediana"></p>
+        </article>
+
+        
+
+        <article class="componentForm">
+            <p class="tituloProgram">Moda</p>
+            <label for="Input-Data--Moda" class="instrucciones">Ingresa los numeros
+                Ejemplo: 3,4,5,6,8
+            </label>
+            
+            <div class="proceso">
+                <input type="text" id="Input-Data--Moda" class="inputDatos">
+                <button type="button" onclick="ButtonModa()" class="boton">Calcular</button>
+            </div>
+            <p id="outputModa"></p>
+        </article>
+       
+    </form>
+
+
+
+
+    </section>
+
+    <footer>
+        <picture>
+            <img src="../General/sello.jpg" alt="LogoPerfil" class="logo">
+        </picture>
+    </footer>
+
+    <script src="promedioMediaModa.js"></script>
+</body>
+</html>

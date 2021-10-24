@@ -1,88 +1,159 @@
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --main-color:#030318;
+    --backgrond-color:#0a0a23;
+    --targets:#008EFF;
+    --fuente: 'Open Sans', sans-serif;
 }
 
 html{
     font-size:62.5%;
 }
 
-
-/*HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER*/
-
-.sello{
-    margin-top:1rem;
-    width:7rem;
-    height:7rem;
-    object-fit:contain;
-    border-radius:1rem;
+body{
+    background:var(--backgrond-color);
+    color: #f5f5f5;
+    font-family:var(--fuente);
+    overflow-x:hidden;
+    width:100vw;
 }
 
-.cabecera{
-    width:0 auto;
-    margin:0 1rem;
-    font-size:1rem;
-    text-align: center;
+/*------------------------------------------------------
+PRIMER BARRA DE NAVEGACION
+-------------------------------------------------------*/
+.navPrincipal{
+    font-size:1.4rem;
+    height:10vh;
+    width:100vw;
+}
 
+.navPrincipal ul{
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
+    height:100%;
     align-items:center;
-    justify-content: center;
+    background:var(--main-color); 
 }
 
-.product{
-    margin:1rem 0;
-    border:.1rem dashed black;
-    border-radius:1rem;
-}
-
-/*SECTION SECTION SECTION SECTION SECTION SECTION SECTION SECTION*/
-
-section{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-}
-
-.formDescuento{
-    font-size:2rem;
-    margin-top:3rem;
-
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-}
-
-input{
-    margin:.5rem 0;
-    border:solid .1rem grey;
-    width:20rem;
-    height:3rem;
-    padding:.5rem;
-    outline:none;
-}
-
-button{
-    background:midnightblue;
-    color:aliceblue;
+.navPrincipal a{
+    text-decoration:none;
+    background:none;
+    margin:-.1rem;
+    padding:2rem 1rem;
+    color:#f5f5f5;
     font-weight:bold;
-    font-size:1.3rem;
+    font-size:1.6rem;
+}
+
+.navPrincipal li{
+    list-style:none;
+    height:auto;
+}
+
+/*------------------------------------------------------
+CABECERA
+-------------------------------------------------------*/
+header{
+    width:100vw;
+    
+}
+
+h1{
+    text-align:center;
+    font-size:3rem;
+}
+
+header p{
+    font-size:2rem;
+    margin-top:1rem;
+    text-align:center;
+}
+
+/*------------------------------------------------------
+SECTION | PRINCIPLA
+-------------------------------------------------------*/
+.main{
+    margin:0rem auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    width:100vw;
+    padding:1rem;
+}
+
+.main-Cabecera{
+    background:none;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;  
+    padding:1rem;  
+}
+
+.main-Formulario{
+    padding:1rem;  
+    display:flex;
+    flex-direction:column;
+    background:var(--targets);
+    width:100%;
+}
+
+.main-Formulario--Instruccion{
+    font-size:2rem;
+}
+
+.main-Formulario--Input{
     border:none;
-    padding:1rem;
-    border-radius:1rem;
-    width:15rem;
+    background:#f5f5f5;
+    height:3rem;
+    width:50%;
 }
 
-p{
+.main-Formulario--Boton{
+    background:#f5f5f5;
+    padding:1rem;
+    font-size:2rem;
+    font-family:var(--fuente);
+    border:none;
+    margin-top:1rem;
+}
+
+.main-Pie{
+    font-size:2rem;
+    margin-top:1rem;
+    text-align:left;
+    width:100%;
+    margin-left:1rem;
+}
+
+#ResultP{
+    background:var(--main-color); 
+    margin-top:2rem;
     font-size:2rem;
     text-align:center;
 }
+/*------------------------------------------------------
+FOOTER | PIE DE PAGINA
+-------------------------------------------------------*/
+footer{
+    width:100vw;
+    height:10rem;
+    background:var(--main-color);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin-top:3rem;
+}
 
-.precioFinalCupon{
-    font-size:2rem;
-    text-align:center;
-    background:papayawhip;
-    border-radius:1rem;
-    padding:1rem;
+.logo{
+    width:4rem;
+    height:4rem;
 }

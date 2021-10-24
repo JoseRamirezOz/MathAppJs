@@ -48,7 +48,6 @@ function onClickButtonPriceDiscount(){
 
     const pFinal = calcularDescuento(priceValue,discountValue);
     const resultP = document.getElementById("ResultP")
-    resultP.innerText = `
-    Wow! con tu cupon tu producto costara: \n $  ${pFinal}`;
+    resultP.innerText =`Wow! con tu cupon solo pagaras: \n$${pFinal}`;
 
 }
